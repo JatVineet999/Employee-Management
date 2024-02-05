@@ -1,0 +1,300 @@
+
+.container {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 16.375em 1fr;
+  grid-template-rows: 5.813em 6.1em 6.1em 1fr;
+  grid-template-areas:
+    "sidebar employees-dashboard"
+    "sidebar employee-header"
+    "sidebar role-description-header"
+    "sidebar employees-details";
+  /* height: 100vh; */
+}
+
+
+
+.sidebar-handle {
+  position: absolute;
+  right: -.7em;
+}
+
+.roles-selection-highlight {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.roles-dashboard-selected-menu li{
+    margin-left: 0;
+    padding-left: 0 !important;
+    
+}
+.roles-dashboard-selected-menu  {
+  width: 77.7%;
+  border-radius: 7px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fde9e9;
+  padding: 0% 2% 2% 7.5% !important;
+  margin-left: .7em;
+  margin-top: -2px;
+  color: #f44848;
+}
+.all-dashboard-selected-menu li {
+  width: 81.5%;
+  border-radius: 7px;
+  background-color: #fde9e9;
+  padding: 4% 0 4% 5.6% !important;
+  margin-left: 1.31em;
+  margin-top: -2px;
+  color: #f44848;
+}
+.all-dashboard ul li img {
+  padding-right: 6%;
+}
+.all-dashboard-selected-menu li img {
+  padding-right: 6.5% !important;
+}
+.role-management-dashboard-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 11px;
+  /* letter-spacing: 1px; */
+}
+.role-management-dashboard-heading-line {
+  background-color: #6b7075;
+  height: 1px;
+  width: 1rem;
+  opacity: 0.3;
+  /* margin-right: 0.5rem; */
+}
+.role-management-dashboard p {
+  margin-top: 6%;
+  font-size: 0.75em;
+  vertical-align: middle;
+  opacity: 0.5;
+  padding-left: 6.5%;
+  margin-bottom: 13px;
+}
+.role-management-dashboard ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 12.4%;
+  padding-top: 4.4%;
+  padding-bottom: 1.8%;
+  /* font-size: 13px; */
+  font-size: small;
+  font-weight: 600;
+  width: 70.8%;
+}
+.role-management-dashboard ul {
+  margin: 0;
+  padding: 0;
+}
+.role-management-dashboard ul li img {
+  padding-right: 4%;
+}
+
+.roles-selection-menu {
+  display: flex;
+  flex-direction: row;
+}
+.roles-selection-highlight-container{
+    display: flex;
+    justify-content: space-between;
+}
+.roles-selection-menu-icon {
+  align-self: center;
+  padding-top: 10px;
+  width: 11px;
+}
+
+.employee-header {
+  grid-area: employee-header;
+}
+.employee-header-container {
+  display: flex;
+  padding: 0 2%;
+  padding-left: 2%;
+  align-items: center;
+  margin-top: -2px;
+  justify-content: space-between;
+}
+.employee-header-text-content div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+.employee-header-text-content div p {
+  margin: 0;
+}
+.employee-header-text-content div img {
+  margin: 1% 3% 0 3%;
+}
+.employee-header-text-content h4 {
+  color: #586a7b;
+  font-size: medium;
+  margin-bottom: 7%;
+  margin-top: 12%;
+}
+.employee-header-text-content p {
+  color: #85929d;
+  font-size: medium;
+  margin-top: 0;
+}
+.role-description-header {
+  grid-area: role-description-header;
+}
+.role-description-container {
+  display: flex;
+  padding: 0 2%;
+  padding-left: 2%;
+  align-items: center;
+  margin-top: -2px;
+  justify-content: space-between;
+}
+.role-description-text-content h4 {
+  color: #586a7b;
+  font-size: medium;
+  margin-bottom: 1%;
+  margin-top: 0.7%;
+}
+.role-description-text-content p {
+  color: #85929d;
+  font-size: medium;
+  margin-top: 0;
+}
+.role-header-buttons {
+  display: flex;
+  width: 19.5%;
+}
+.btn-add-role img {
+  margin: 0 5px 0 0;
+}
+.btn-add-role {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+  margin-right: 0;
+  /* flex-wrap: nowrap; */
+  font-size: medium;
+  padding: 6% 10%;
+  /* width: 140%; */
+  font-weight: 600;
+  background-color: #f44848;
+}
+/* drop-down-menu-filter */
+.roles-details {
+  grid-area: employees-details;
+  padding: 0.3% 1.5%;
+  /* box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1); */
+}
+.roles-details-container {
+  /* padding:0 .5%; */
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1); */
+}
+
+/* roles-details-css */
+
+.roles-card {
+  border: 1px solid #ebebeb;
+  padding: 2%;
+  color: #63708a;
+  width: 28%;
+  border-radius: 10px;
+  margin-bottom: 1.4%;
+  /* height: 222px; */
+  flex-wrap: wrap;
+  /* margin-right: 1.5%; */
+}
+.department p {
+  margin: 2%;
+  font-size: small;
+}
+.roles-card-header p {
+  font-size: small;
+  margin: 0%;
+  color: black;
+}
+.roles-card-header {
+  display: flex;
+  margin: 3.7% 0 4% 0;
+  justify-content: flex-start;
+  align-items: center;
+}
+.roles-card-header div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 2%;
+}
+.roles-card-header h5 {
+  color: black;
+  margin: 0 0 1% 0;
+  /* margin: 2.7% 0 7% 0; */
+  /* font-weight: 700; */
+}
+.view-all-employees {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 3%;
+}
+.view-all-employees p {
+  font-size: small;
+  margin: 0;
+  margin-right: 1% !important;
+  margin: 0;
+}
+.icon-Vector {
+  font-size: smaller;
+}
+.roles-card-total-employees {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: small;
+}
+.roles-card-total-employees p {
+  margin-top: 2%;
+}
+.department {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5%;
+}
+.department div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.department div span,
+img {
+  margin-right: 0.3em;
+  color: black;
+}
+.view-all-employees {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+.view-all-employees span {
+  font-size: smaller;
+  margin-left: 1%;
+}
+.roles-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
