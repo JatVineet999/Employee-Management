@@ -1,3 +1,4 @@
+@import url("font.css");
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -8,7 +9,10 @@ figure {
 }
 .employees-navbar {
   grid-area: employees-dashboard;
+  /* width: calc(100% -16.375em); */
   /* border: 1px solid black; */
+  position:fixed;
+  width: 79%;
   padding: 0 1.5%;
 }
 .sidebar a {
@@ -24,6 +28,7 @@ figure {
   justify-content: space-between;
   color: #6b7075;
   position: relative;
+  height: 100vh;
 }
 .container ul {
   list-style-type: none;
@@ -78,7 +83,7 @@ figure {
   font-size: small;
   font-weight: 600;
 }
-.highlight{
+.highlight {
   position: absolute;
   right: 0;
   top: 2.5em;
@@ -86,12 +91,12 @@ figure {
   padding: 0;
   width: 4px !important;
 }
-.role-management-dashboard{
+.role-management-dashboard {
   position: relative;
 }
 .dashboard-selection-highlight {
   background-color: #f44848;
-  width: 4px!important;
+  width: 4px !important;
   margin: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -148,7 +153,9 @@ figure {
 }
 .navbar-container {
   padding-top: 13px;
-  /* background-color: red; */
+  background-color: white;
+  /* position: fixed;
+  width: 79%; */
 }
 .navbar {
   display: flex;
@@ -219,10 +226,10 @@ figure {
   align-items: center !important;
   background-color: #fee9e9;
   padding-left: 0;
-  border-radius: 5px ;
-  width: 80%!important;
-  padding-left: 1.5em!important;
-  margin: 0 .5em 0 1em;
+  border-radius: 5px;
+  width: 80% !important;
+  padding-left: 1.5em !important;
+  margin: 0 0.5em 0 1em;
 }
 .roles-selection-menu div {
   display: flex;
@@ -230,16 +237,16 @@ figure {
   align-items: center;
   width: 10em;
 }
-.roles-selected-menu img{
+.roles-selected-menu img {
   margin-top: 0;
   padding-top: 0;
-  margin-bottom:2px;
+  margin-bottom: 2px;
   /* padding-right: 5em; */
 }
-.roles-selection-menu img{
+.roles-selection-menu img {
   margin-top: 0;
   padding-top: 0;
-  margin-bottom:2px;
+  margin-bottom: 2px;
 }
 .roles-selected-menu div {
   display: flex;
@@ -247,4 +254,3 @@ figure {
   align-items: center;
   width: 10em;
 }
-

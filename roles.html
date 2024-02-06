@@ -3,10 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/roles.css" />
-    <link rel="stylesheet" href="css/font.css" />
-
     <title>Roles-dashboard</title>
   </head>
   <body>
@@ -85,6 +82,7 @@
           </div>
         </div>
       </aside>
+
       <section class="roles-navbar">
         <div class="navbar-container">
           <div class="navbar">
@@ -120,224 +118,226 @@
           </div>
         </div>
       </section>
-      <section class="roles-header">
-        <div class="roles-header-container">
-          <div class="roles-header-text-content">
-            <h4>Roles</h4>
-            <p>All the roles are configure here</p>
-          </div>
-          <div class="role-header-buttons">
-            <button class="btn btn-add-role">
-              <img src="images\Interface\Add.svg" alt="add-icon" />ADD ROLE
-            </button>
-          </div>
-        </div>
-      </section>
-      <section class="filter-menu">
-        <div class="filter-menu-container">
-          <div class="filter-selction-menu">
-            <div class="filter-content">
-              <p>Filter</p>
-              <img src="images/filter-icon.png" alt="filter" />
+      <main class="main">
+        <section class="roles-header">
+          <div class="roles-header-container">
+            <div class="roles-header-text-content">
+              <h4>Roles</h4>
+              <p>All the roles are configure here</p>
             </div>
-            <div class="status-dropdown">
-              <select name="status" class="filter-dropdowns">
-                <option value="Status">Status</option>
-                <option value="Active">Active</option>
-              </select>
-            </div>
-            <div class="Location-dropdown">
-              <select name="location" class="filter-dropdowns">
-                <option value="Location">Location</option>
-                <option value="Hyderabadd">HYBD</option>
-                <option value="work-from-home">WFH</option>
-              </select>
-            </div>
-            <div class="department-dropdown">
-              <select name="department" class="filter-dropdowns">
-                <option value="department">Department</option>
-                <option value="Sales">Sales</option>
-              </select>
+            <div class="role-header-buttons">
+              <button class="btn btn-add-role">
+                <img src="images\Interface\Add.svg" alt="add-icon" />ADD ROLE
+              </button>
             </div>
           </div>
-          <div class="filter-menu-buttons">
-            <button class="btn btn-reset-filter">Reset</button
-            ><button class="btn btn-apply-filter">Apply</button>
-          </div>
-        </div>
-      </section>
-      <section class="roles-details">
-        <div class="roles-details-container">
-          <div class="roles-card">
-            <div class="roles-card-header">
-              <h4>Customer Service Manager</h4>
-              <img src="images/edit.svg" alt="edit" />
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/team_svgrepo.com.svg" alt="team" />
-                <p>Department</p>
+        </section>
+        <section class="filter-menu">
+          <div class="filter-menu-container">
+            <div class="filter-selction-menu">
+              <div class="filter-content">
+                <p>Filter</p>
+                <img src="images/filter-icon.png" alt="filter" />
               </div>
-              <p>IT</p>
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/location-pin.svg" alt="team" />
-                <p>Location</p>
+              <div class="status-dropdown">
+                <select name="status" class="filter-dropdowns">
+                  <option value="Status">Status</option>
+                  <option value="Active">Active</option>
+                </select>
               </div>
-              <p>Hyderabad</p>
+              <div class="Location-dropdown">
+                <select name="location" class="filter-dropdowns">
+                  <option value="Location">Location</option>
+                  <option value="Hyderabadd">HYBD</option>
+                  <option value="work-from-home">WFH</option>
+                </select>
+              </div>
+              <div class="department-dropdown">
+                <select name="department" class="filter-dropdowns">
+                  <option value="department">Department</option>
+                  <option value="Sales">Sales</option>
+                </select>
+              </div>
             </div>
-            <div class="roles-card-total-employees">
-              <p>Total Employees</p>
-              <img src="images/total-employees.png" alt="employees" />
-            </div>
-            <div class="view-all-employees">
-              <p>View all Employees</p>
-              <span class="icon-Vector"></span>
+            <div class="filter-menu-buttons">
+              <button class="btn btn-reset-filter">Reset</button
+              ><button class="btn btn-apply-filter">Apply</button>
             </div>
           </div>
-          <div class="roles-card">
-            <div class="roles-card-header">
-              <h4>Customer Service Manager</h4>
-              <img src="images/edit.svg" alt="edit" />
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/team_svgrepo.com.svg" alt="team" />
-                <p>Department</p>
+        </section>
+        <section class="roles-details">
+          <div class="roles-details-container">
+            <div class="roles-card">
+              <div class="roles-card-header">
+                <h4>Customer Service Manager</h4>
+                <img src="images/edit.svg" alt="edit" />
               </div>
-              <p>IT</p>
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/location-pin.svg" alt="team" />
-                <p>Location</p>
+              <div class="department">
+                <div>
+                  <img src="images/team_svgrepo.com.svg" alt="team" />
+                  <p>Department</p>
+                </div>
+                <p>IT</p>
               </div>
-              <p>Hyderabad</p>
+              <div class="department">
+                <div>
+                  <img src="images/location-pin.svg" alt="team" />
+                  <p>Location</p>
+                </div>
+                <p>Hyderabad</p>
+              </div>
+              <div class="roles-card-total-employees">
+                <p>Total Employees</p>
+                <img src="images/total-employees.png" alt="employees" />
+              </div>
+              <div class="view-all-employees">
+                <p>View all Employees</p>
+                <span class="icon-Vector"></span>
+              </div>
             </div>
-            <div class="roles-card-total-employees">
-              <p>Total Employees</p>
-              <img src="images/total-employees.png" alt="employees" />
+            <div class="roles-card">
+              <div class="roles-card-header">
+                <h4>Customer Service Manager</h4>
+                <img src="images/edit.svg" alt="edit" />
+              </div>
+              <div class="department">
+                <div>
+                  <img src="images/team_svgrepo.com.svg" alt="team" />
+                  <p>Department</p>
+                </div>
+                <p>IT</p>
+              </div>
+              <div class="department">
+                <div>
+                  <img src="images/location-pin.svg" alt="team" />
+                  <p>Location</p>
+                </div>
+                <p>Hyderabad</p>
+              </div>
+              <div class="roles-card-total-employees">
+                <p>Total Employees</p>
+                <img src="images/total-employees.png" alt="employees" />
+              </div>
+              <div class="view-all-employees">
+                <p>View all Employees</p>
+                <span class="icon-Vector"></span>
+              </div>
             </div>
-            <div class="view-all-employees">
-              <p>View all Employees</p>
-              <span class="icon-Vector"></span>
+            <div class="roles-card">
+              <div class="roles-card-header">
+                <h4>Customer Service Manager</h4>
+                <img src="images/edit.svg" alt="edit" />
+              </div>
+              <div class="department">
+                <div>
+                  <img src="images/team_svgrepo.com.svg" alt="team" />
+                  <p>Department</p>
+                </div>
+                <p>IT</p>
+              </div>
+              <div class="department">
+                <div>
+                  <img src="images/location-pin.svg" alt="team" />
+                  <p>Location</p>
+                </div>
+                <p>Hyderabad</p>
+              </div>
+              <div class="roles-card-total-employees">
+                <p>Total Employees</p>
+                <img src="images/total-employees.png" alt="employees" />
+              </div>
+              <div class="view-all-employees">
+                <p>View all Employees</p>
+                <span class="icon-Vector"></span>
+              </div>
+            </div>
+            <div class="roles-card">
+              <div class="roles-card-header">
+                <h4>Customer Service Manager</h4>
+                <img src="images/edit.svg" alt="edit" />
+              </div>
+              <div class="department">
+                <div>
+                  <img src="images/team_svgrepo.com.svg" alt="team" />
+                  <p>Department</p>
+                </div>
+                <p>IT</p>
+              </div>
+              <div class="department">
+                <div>
+                  <img src="images/location-pin.svg" alt="team" />
+                  <p>Location</p>
+                </div>
+                <p>Hyderabad</p>
+              </div>
+              <div class="roles-card-total-employees">
+                <p>Total Employees</p>
+                <img src="images/total-employees.png" alt="employees" />
+              </div>
+              <div class="view-all-employees">
+                <p>View all Employees</p>
+                <span class="icon-Vector"></span>
+              </div>
+            </div>
+            <div class="roles-card">
+              <div class="roles-card-header">
+                <h4>Customer Service Manager</h4>
+                <img src="images/edit.svg" alt="edit" />
+              </div>
+              <div class="department">
+                <div>
+                  <img src="images/team_svgrepo.com.svg" alt="team" />
+                  <p>Department</p>
+                </div>
+                <p>IT</p>
+              </div>
+              <div class="department">
+                <div>
+                  <img src="images/location-pin.svg" alt="team" />
+                  <p>Location</p>
+                </div>
+                <p>Hyderabad</p>
+              </div>
+              <div class="roles-card-total-employees">
+                <p>Total Employees</p>
+                <img src="images/total-employees.png" alt="employees" />
+              </div>
+              <div class="view-all-employees">
+                <p>View all Employees</p>
+                <span class="icon-Vector"></span>
+              </div>
+            </div>
+            <div class="roles-card">
+              <div class="roles-card-header">
+                <h4>Customer Service Manager</h4>
+                <img src="images/edit.svg" alt="edit" />
+              </div>
+              <div class="department">
+                <div>
+                  <img src="images/team_svgrepo.com.svg" alt="team" />
+                  <p>Department</p>
+                </div>
+                <p>IT</p>
+              </div>
+              <div class="department">
+                <div>
+                  <img src="images/location-pin.svg" alt="team" />
+                  <p>Location</p>
+                </div>
+                <p>Hyderabad</p>
+              </div>
+              <div class="roles-card-total-employees">
+                <p>Total Employees</p>
+                <img src="images/total-employees.png" alt="employees" />
+              </div>
+              <div class="view-all-employees">
+                <p>View all Employees</p>
+                <span class="icon-Vector"></span>
+              </div>
             </div>
           </div>
-          <div class="roles-card">
-            <div class="roles-card-header">
-              <h4>Customer Service Manager</h4>
-              <img src="images/edit.svg" alt="edit" />
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/team_svgrepo.com.svg" alt="team" />
-                <p>Department</p>
-              </div>
-              <p>IT</p>
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/location-pin.svg" alt="team" />
-                <p>Location</p>
-              </div>
-              <p>Hyderabad</p>
-            </div>
-            <div class="roles-card-total-employees">
-              <p>Total Employees</p>
-              <img src="images/total-employees.png" alt="employees" />
-            </div>
-            <div class="view-all-employees">
-              <p>View all Employees</p>
-              <span class="icon-Vector"></span>
-            </div>
-          </div>
-          <div class="roles-card">
-            <div class="roles-card-header">
-              <h4>Customer Service Manager</h4>
-              <img src="images/edit.svg" alt="edit" />
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/team_svgrepo.com.svg" alt="team" />
-                <p>Department</p>
-              </div>
-              <p>IT</p>
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/location-pin.svg" alt="team" />
-                <p>Location</p>
-              </div>
-              <p>Hyderabad</p>
-            </div>
-            <div class="roles-card-total-employees">
-              <p>Total Employees</p>
-              <img src="images/total-employees.png" alt="employees" />
-            </div>
-            <div class="view-all-employees">
-              <p>View all Employees</p>
-              <span class="icon-Vector"></span>
-            </div>
-          </div>
-          <div class="roles-card">
-            <div class="roles-card-header">
-              <h4>Customer Service Manager</h4>
-              <img src="images/edit.svg" alt="edit" />
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/team_svgrepo.com.svg" alt="team" />
-                <p>Department</p>
-              </div>
-              <p>IT</p>
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/location-pin.svg" alt="team" />
-                <p>Location</p>
-              </div>
-              <p>Hyderabad</p>
-            </div>
-            <div class="roles-card-total-employees">
-              <p>Total Employees</p>
-              <img src="images/total-employees.png" alt="employees" />
-            </div>
-            <div class="view-all-employees">
-              <p>View all Employees</p>
-              <span class="icon-Vector"></span>
-            </div>
-          </div>
-          <div class="roles-card">
-            <div class="roles-card-header">
-              <h4>Customer Service Manager</h4>
-              <img src="images/edit.svg" alt="edit" />
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/team_svgrepo.com.svg" alt="team" />
-                <p>Department</p>
-              </div>
-              <p>IT</p>
-            </div>
-            <div class="department">
-              <div>
-                <img src="images/location-pin.svg" alt="team" />
-                <p>Location</p>
-              </div>
-              <p>Hyderabad</p>
-            </div>
-            <div class="roles-card-total-employees">
-              <p>Total Employees</p>
-              <img src="images/total-employees.png" alt="employees" />
-            </div>
-            <div class="view-all-employees">
-              <p>View all Employees</p>
-              <span class="icon-Vector"></span>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
     </div>
   </body>
 </html>
