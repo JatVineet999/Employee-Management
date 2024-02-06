@@ -11,6 +11,10 @@ figure {
   /* border: 1px solid black; */
   padding: 0 1.5%;
 }
+.sidebar a {
+  text-decoration: none;
+  color: #6b7075;
+}
 .sidebar {
   grid-area: sidebar;
   /* border-right: 1px solid black; */
@@ -28,6 +32,7 @@ figure {
   padding-left: 1em;
   padding-top: 0.938em;
   font-size: 2em;
+  margin: 0;
 }
 .all-dashboard {
   margin-top: 1.5em;
@@ -45,6 +50,7 @@ figure {
   height: 1px;
   width: 1rem;
   opacity: 0.3;
+  margin: 0;
   /* margin-right: 0.5rem; */
 }
 
@@ -72,19 +78,34 @@ figure {
   font-size: small;
   font-weight: 600;
 }
+.highlight{
+  position: absolute;
+  right: 0;
+  top: 2.5em;
+  margin: 0;
+  padding: 0;
+  width: 4px !important;
+}
+.role-management-dashboard{
+  position: relative;
+}
 .dashboard-selection-highlight {
   background-color: #f44848;
-  width: 4px;
+  width: 4px!important;
   margin: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  /* height: 42px; */
+  height: 3.1em;
 }
+
 .all-dashboard-selected-menu {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 
   /* width: 80%; */
+}
+.all-dashboard-selected-menu a {
+  color: #f76f6f;
 }
 .update {
   background-color: #fef6f6;
@@ -117,6 +138,13 @@ figure {
 .btn-accept {
   color: white;
   background-color: #f44848;
+}
+.navbar figure a {
+  text-decoration: none;
+}
+.btn-accept a {
+  text-decoration: none;
+  color: white;
 }
 .navbar-container {
   padding-top: 13px;
@@ -179,3 +207,44 @@ figure {
   outline: none;
   cursor: pointer;
 }
+
+.roles-selection-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.roles-selected-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center !important;
+  background-color: #fee9e9;
+  padding-left: 0;
+  border-radius: 5px ;
+  width: 80%!important;
+  padding-left: 1.5em!important;
+  margin: 0 .5em 0 1em;
+}
+.roles-selection-menu div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 10em;
+}
+.roles-selected-menu img{
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom:2px;
+  /* padding-right: 5em; */
+}
+.roles-selection-menu img{
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom:2px;
+}
+.roles-selected-menu div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 10em;
+}
+

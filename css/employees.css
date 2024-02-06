@@ -1,4 +1,3 @@
-
 .container {
   margin: 0;
   display: grid;
@@ -13,27 +12,39 @@
   /* height: 100vh; */
 }
 
-
 .sidebar-handle {
   position: absolute;
-  right: -.45em;
+  right: -0.9em;
+  top: 2em;
 }
 
-.all-dashboard-selected-menu li {
+.all-dashboard-selected-menu {
   width: 81.5%;
   border-radius: 7px;
   background-color: #fde9e9;
-  padding: 4% 0 4% 5.6% !important;
-  margin-left: 1.31em;
+  padding: 4% 0 4% 7% !important;
+  /* margin-left: 1.31em; */
   margin-top: -2px;
   color: #f44848;
 }
+.selected-menu {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  padding-left: 5% !important;
+  padding-top: 4.4%;
+  padding-bottom: 4.4%;
+  /* font-size: 13px; */
+  font-size: small;
+  font-weight: 600;
+}
 .all-dashboard ul li img {
-  padding-right: 6%;
+  padding-right: 3%;
 }
 .all-dashboard-selected-menu li img {
   padding-right: 6.5% !important;
 }
+
 .role-management-dashboard-heading {
   display: flex;
   flex-direction: row;
@@ -47,6 +58,7 @@
   height: 1px;
   width: 1rem;
   opacity: 0.3;
+  margin: 0;
   /* margin-right: 0.5rem; */
 }
 .role-management-dashboard p {
@@ -91,7 +103,7 @@
 }
 .employee-header-container {
   display: flex;
-  padding: 0 2%;
+  padding: 0 1.5%;
   padding-left: 2%;
   align-items: center;
   margin-top: -2px;
@@ -109,9 +121,9 @@
 }
 .employee-header-buttons {
   display: flex;
-  width: 32%;
-  position: relative;
-  right: -1.7%;
+  /* width: 32%; */
+  /* position: relative; */
+  /* right: -1.7%; */
 }
 .export-font {
   font-size: x-large;
@@ -144,7 +156,7 @@
   /* flex-wrap: nowrap; */
   font-size: medium;
   padding: 0% 5.4%;
-  /* width: 140%; */
+  width: 16.1em;
   font-weight: 600;
   background-color: red;
 }
@@ -163,15 +175,16 @@
 .alphabetical-filter ul {
   display: flex;
   padding-left: 0;
-  margin: 0;
+  /* margin: 1%; */
+  /* flex-wrap: wrap; */
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 .alphabetical-filter ul li {
   background-color: #eaebee;
-  margin: 3px;
-  padding: 3% 3.15%;
+  margin: 1.9%;
+  padding: 4.4% 4.5%;
   font-size: small;
   border-radius: 5px;
   color: #9ca5b4;
@@ -247,7 +260,7 @@
 
 .filter-menu-buttons {
   display: flex;
-  padding-right: .3em;
+  padding-right: 0.3em;
 }
 .btn-reset-filter {
   background-color: white;

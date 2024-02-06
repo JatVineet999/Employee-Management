@@ -11,19 +11,15 @@
   </head>
   <body>
     <div class="container">
-      <section class="sidebar">
+      <aside class="sidebar">
         <div class="dashboard">
-          <figure class="logo">
-            <span class="icon-TezoLogo"
-              ><span class="path1"></span><span class="path2"></span
-              ><span class="path3"></span><span class="path4"></span
-              ><span class="path5"></span
-            ></span>
+          <figure>
+            <img src="images/tezo-logo.svg" alt="logo" class="logo" />
             <img src="images/handle.png" alt="handle" class="sidebar-handle" />
           </figure>
           <div class="all-dashboard">
             <div class="all-dashboard-heading">
-              <div class="all-dashboard-heading-line"></div>
+              <hr class="all-dashboard-heading-line" />
               <p>ALL</p>
             </div>
             <ul>
@@ -32,78 +28,85 @@
                   src="images\horizontal-nav\Dashboard.svg"
                   alt="dashboard"
                 />
-                Dashboard
+                <a href="#"> Dashboard</a>
               </li>
-
               <li>
                 <img src="images/employees-grp.png" alt="employess" />
-                Employees
+                <a href="#"> Employees</a>
               </li>
             </ul>
           </div>
           <div class="role-management-dashboard">
             <div class="role-management-dashboard-heading">
-              <div class="role-management-dashboard-heading-line"></div>
+              <hr class="role-management-dashboard-heading-line" />
               <p>ROLE / USER MANAGEMENT</p>
             </div>
             <ul>
-              <div class="roles-selection-highlight-container">
-                <div class="roles-dashboard-selected-menu">
-                  <li>
-                    <img src="images/setting.png" alt="roles" />
-                    Roles
-                  </li>
-                  <img
-                    src="images/drop-down-right.png"
-                    alt="drop-right"
-                    class="roles-selection-menu-icon"
-                  />
+              <li class="roles-selected-menu">
+                <div>
+                  <img src="images/horizontal-nav/Roles.svg" alt="roles" />
+                  <a href="#">Roles</a>
                 </div>
-                <div class="Dashboard-selection-highlight"></div>
-              </div>
-              <div class="roles-selection-menu">
-                <li>
+                <img
+                  src="images/drop-down-right.png"
+                  alt="drop-right"
+                  class="roles-selection-menu-icon"
+                />
+              </li>
+              <li class="highlight">
+                <div class="dashboard-selection-highlight"></div>
+              </li>
+              <li class="roles-selection-menu">
+                <div>
                   <img
                     src="images\horizontal-nav\assign user.svg"
                     alt="Access-rights"
                   />
-                  Access Rights
-                </li>
+                  <a href="#">Access Rights</a>
+                </div>
                 <img
                   src="images/drop-right-icon.png"
                   alt="drop-right"
                   class="roles-selection-menu-icon"
                 />
-              </div>
+              </li>
             </ul>
           </div>
         </div>
-        <article class="update">
+        <div class="update">
           <p class="update-install">Install new update 2.3.1A</p>
           <p class="update-description">
             Allow to launch the new update for the AD application
           </p>
           <div>
-            <button class="btn btn-dismiss">Dismiss</button
-            ><button class="btn btn-accept">Accept</button>
+            <button class="btn btn-dismiss"><a href="#">Dismiss</a></button
+            ><button class="btn btn-accept"><a href="#">Accept</a></button>
           </div>
-        </article>
-      </section>
-      <section class="employees-navbar">
+        </div>
+      </aside>
+      <section class="role-details-navbar">
         <div class="navbar-container">
           <div class="navbar">
             <div class="search-bar">
               <img src="images/search.png" alt="search" />
               <input type="search" placeholder="Search" />
             </div>
-            <figure><span class="icon-Language"></span></figure>
-            <figure><span class="icon-Categories"></span></figure>
-            <figure><span class="icon-Mode"></span></figure>
             <figure>
-              <span class="icon-Notifications"
-                ><span class="path1"></span><span class="path2"></span
-                ><span class="path3"></span
-              ></span>
+              <a href="#"><span class="icon-language"></span></a>
+            </figure>
+            <figure>
+              <a href="#"> <span class="icon-categories"></span></a>
+            </figure>
+            <figure>
+              <a href="#"> <span class="icon-mode"></span></a>
+            </figure>
+            <figure>
+              <a href="#">
+                <span class="icon-notifications"
+                  ><span class="notification-icon-part-1"></span
+                  ><span class="notification-icon-part-2"></span
+                  ><span class="notification-icon-part-3"></span></span
+              ></a>
             </figure>
             <figure><img src="images/profile-pic.png" alt="" /></figure>
             <div class="profile">
@@ -116,9 +119,9 @@
           </div>
         </div>
       </section>
-      <section class="employee-header">
-        <div class="employee-header-container">
-          <div class="employee-header-text-content">
+      <section class="role-details-header">
+        <div class="role-details-header-container">
+          <div class="role-details-header-text-content">
             <div>
               <h4>Roles</h4>
               <img
