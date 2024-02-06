@@ -5,13 +5,11 @@
   grid-template-columns: 16.375em 1fr;
   grid-template-rows: 5.813em;
   grid-template-areas:
-    "sidebar employees-dashboard"
-    "sidebar main"
-    "sidebar main"
+    "sidebar navbar"
     "sidebar main";
-  /* height: 100vh; */
 }
 .main {
+  grid-area: main;
   display: grid;
   grid-template-rows: 6.1em 6.1em 1fr;
   grid-template-areas:
@@ -123,7 +121,7 @@
 }
 
 .role-details-navbar {
-  grid-area: employees-dashboard;
+  grid-area: navbar;
   /* border: 1px solid black; */
   padding: 0 1.5%;
 }

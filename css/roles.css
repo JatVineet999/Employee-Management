@@ -5,13 +5,11 @@
   grid-template-columns: 16.375em 1fr;
   grid-template-rows: 5.813em;
   grid-template-areas:
-    "sidebar employees-dashboard"
-    "sidebar main"
-    "sidebar main"
+    "sidebar navbar"
     "sidebar main";
-  /* height: 100vh; */
 }
 .main {
+  grid-area: main;
   display: grid;
   grid-template-rows: 6.1em 4.17em 1fr;
   grid-template-areas:
@@ -26,7 +24,7 @@
   top: 2em;
 }
 .roles-navbar {
-  grid-area: employees-dashboard;
+  grid-area: navbar;
   /* border: 1px solid black; */
   padding: 0 1.5%;
 }
@@ -371,4 +369,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+.view-all-employees {
+  cursor: pointer;
+}
+.view-employees {
+  text-decoration: none;
+  color: #6b6b6b;
+  cursor: pointer;
 }
