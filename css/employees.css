@@ -11,19 +11,10 @@
     "employees-details";
 }
 .header-menu {
-  grid-area: navbar;
+  grid-area: user-options-section;
   background-color: white;
   padding-top: 13px !important;
   padding: 0 1.5%;
-}
-.all-dashboard-selected-menu {
-  width: 81.5%;
-  border-radius: 7px;
-  background-color: #fde9e9;
-  padding: 4% 0 4% 7% !important;
-  margin-left: -1em;
-  margin-top: -2px;
-  color: #f44848;
 }
 .selected-menu {
   display: flex;
@@ -34,66 +25,6 @@
   padding-bottom: 4.4%;
   font-size: small;
   font-weight: 600;
-}
-.all-dashboard ul li img {
-  padding-right: 3%;
-}
-.all-dashboard-selected-menu li img {
-  padding-right: 6.5% !important;
-}
-
-.role-management-dashboard-heading {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 11px;
-}
-.role-management-dashboard-heading-line {
-  background-color: #6b7075;
-  height: 1px;
-  width: 1rem;
-  opacity: 0.3;
-  margin: 0;
-}
-.role-management-dashboard p {
-  margin-top: 6%;
-  font-size: 0.75em;
-  vertical-align: middle;
-  opacity: 0.5;
-  padding-left: 6.5%;
-  margin-bottom: 13px;
-}
-
-.role-management-dashboard ul li {
-  align-items: center;
-  padding-left: 12.4%;
-  padding-top: 4.4%;
-  padding-bottom: 1.8%;
-  font-size: small;
-  font-weight: 600;
-  width: 80%;
-}
-.role-management-dashboard ul {
-  margin: 0;
-  padding: 0;
-}
-.role-management-dashboard ul li img {
-  padding-right: 4%;
-}
-
-.roles-selection-menu {
-  display: flex;
-  flex-direction: row;
-}
-.roles-selection-highlight-container {
-  display: flex;
-  justify-content: space-between;
-}
-.roles-selection-menu-icon {
-  align-self: center;
-  padding-top: 10px;
-  width: 11px;
 }
 .employee-header {
   grid-area: employee-header;
@@ -155,7 +86,7 @@
 }
 .alphabetical-filter li:hover {
   background-color: #fc8181;
-  color: white; 
+  color: white;
 }
 .alphabetical-filter {
   grid-area: alphabetical-filter;
@@ -185,36 +116,6 @@
   padding-left: 1.5em !important;
   margin: 0 0.5em 0 1em;
 }
-.roles-selected-menu a {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.roles-selection-menu a {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.roles-selected-menu a div {
-  margin-right: 5.2em;
-}
-.roles-selection-menu a div {
-  width: 15.2em;
-}
-.all-dashboard ul li img {
-  margin-right: 0.7em;
-}
-ul li a {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-.roles-selection-menu .dash img {
-  margin-right: 0.8em;
-}
-ul li a img {
-  margin-right: 5px;
-}
 .alphabetical-filter ul {
   display: flex;
   padding-left: 0;
@@ -238,85 +139,6 @@ ul li a img {
   background-color: #f44848 !important;
   margin-left: 5px !important;
   margin-right: 5px !important;
-}
-
-.filter-dropdowns {
-  border: 1px solid #fbc9c9;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: small;
-  color: #606e87;
-  padding: 0.6em 0.5em;
-  transition: background-color 0.3s ease;
-  background-color: white;
-}
-.filter-dropdowns:focus {
-  outline: none;
-  cursor: pointer;
-}
-.filter-menu {
-  display: flex;
-  grid-area: filter-menu;
-  padding: 0 1.5%;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-.filter-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.filter-content img {
-  width: 100%;
-  height: 15px;
-  margin-left: 10px;
-}
-.filter-menu-container {
-  background-color: #fdf2f2;
-  display: flex;
-  padding: 0.5% 0%;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #fbc9c9;
-  border-radius: 7px;
-  width: 100%;
-}
-.filter-selction-menu {
-  display: flex;
-  padding-left: 2%;
-  justify-content: space-between;
-  align-items: center;
-}
-.filter-selction-menu div {
-  display: flex;
-  margin-right: 10px;
-}
-.filter-selction-menu div p {
-  color: #f66767;
-  font-size: small;
-}
-
-.filter-menu-buttons {
-  display: flex;
-  padding-right: 0.3em;
-}
-.btn-reset-filter {
-  background-color: white;
-  color: #f44848;
-  border: 1px solid #f44848;
-  font-size: small;
-  font-weight: 500;
-  border-radius: 5px;
-  padding: 0.5em 1em;
-}
-.btn-apply-filter {
-  background-color: #f44848;
-  color: white;
-  font-size: small;
-  font-weight: 500;
-  border-radius: 5px;
-  padding: 0.5em 1em;
 }
 .employees-details {
   grid-area: employees-details;
