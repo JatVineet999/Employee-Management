@@ -10,7 +10,8 @@
 }
 body {
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 span {
   margin: 0;
@@ -29,13 +30,11 @@ span {
 .sidebar {
   grid-area: sidebar;
   width: 16.375rem;
-  /* border-right: 1px solid black; */
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 20px 1px rgba(201, 194, 194, 0.1);
   justify-content: space-between;
   color: #6b7075;
-  /* position: relative; */
   position: fixed;
   height: 100vh;
 }
@@ -57,7 +56,6 @@ span {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 5px;
-  /* letter-spacing: 1px; */
 }
 .all-dashboard-heading-line {
   background-color: #6b7075;
@@ -65,7 +63,6 @@ span {
   width: 1rem;
   opacity: 0.3;
   margin: 0;
-  /* margin-right: 0.5rem; */
 }
 
 .all-dashboard p {
@@ -73,7 +70,6 @@ span {
   vertical-align: middle;
   opacity: 0.5;
   padding-left: 6.5%;
-  /* display: flex; */
 }
 
 .all-dashboard ul {
@@ -91,7 +87,6 @@ span {
   padding-left: 6%;
   padding-right: 0%;
   border-radius: 6px;
-  /* font-size: 13px; */
   font-size: small;
   font-weight: 600;
 }
@@ -106,23 +101,51 @@ span {
 .role-management-dashboard {
   position: relative;
 }
+
 .dashboard-selection-highlight {
+  float: inline-end;
+  position: relative;
+  top: -2.8em;
   background-color: #f44848;
   width: 4px !important;
   margin: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  height: 3.1em;
+  height: 2.8em;
 }
 
 .all-dashboard-selected-menu {
   display: flex;
-  /* justify-content: space-between; */
-
-  /* width: 80%; */
 }
 .all-dashboard-selected-menu a {
   color: #f76f6f;
+}
+.roles-selected-menu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.roles-selection-menu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.roles-selected-menu a div {
+  margin-right: 5.2em;
+}
+.roles-selection-menu a div {
+  width: 15.2em;
+}
+.all-dashboard ul li img {
+  margin-right: 0.7em;
+}
+ul li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+ul li a img {
+  margin-right: 5px;
 }
 .app-update {
   background-color: #fef6f6;
@@ -145,7 +168,6 @@ span {
   padding: 4.7% 7%;
   border-radius: 7px;
   border: 0;
-  /* font-size: small; */
   font-weight: 600;
 }
 .btn-dismiss {
@@ -179,11 +201,9 @@ span {
 }
 .search-bar {
   width: 67.2%;
-  /* border: 1px solid blue; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  /* height: 25px; */
 }
 .search-bar img {
   margin-left: 22px;
@@ -201,7 +221,6 @@ span {
 .navbar input::placeholder {
   font-size: large;
   opacity: 0.5;
-  /* font-weight: 600; */
 }
 .profile-name {
   font-size: small;
@@ -229,7 +248,6 @@ span {
 .roles-selection-menu {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .roles-selected-menu {
   display: flex;
@@ -246,13 +264,12 @@ span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 10em;
+  width: 12em;
 }
 .roles-selected-menu img {
   margin-top: 0;
   padding-top: 0;
   margin-bottom: 2px;
-  /* padding-right: 5em; */
 }
 .roles-selection-menu img {
   margin-top: 0;
@@ -264,4 +281,7 @@ span {
   justify-content: flex-start;
   align-items: center;
   width: 10em;
+}
+.icon-none {
+  display: none;
 }

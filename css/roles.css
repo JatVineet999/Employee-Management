@@ -1,5 +1,4 @@
 @import url("common.css");
-
 .main {
   grid-area: main;
   display: grid;
@@ -12,7 +11,6 @@
 
 .roles-navbar {
   grid-area: navbar;
-  /* border: 1px solid black; */
   padding: 0 1.5%;
   padding-top: 13px !important;
 }
@@ -47,7 +45,6 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: 11px;
-  /* letter-spacing: 1px; */
 }
 .role-management-dashboard-heading-line {
   background-color: #6b7075;
@@ -55,7 +52,6 @@
   width: 1rem;
   opacity: 0.3;
   margin: 0;
-  /* margin-right: 0.5rem; */
 }
 .role-management-dashboard p {
   margin-top: 6%;
@@ -67,12 +63,10 @@
 }
 .role-management-dashboard ul li {
   display: flex;
-  /* justify-content: flex-start; */
   align-items: center;
   padding-left: 12.4%;
   padding-top: 4.4%;
   padding-bottom: 1.8%;
-  /* font-size: 13px; */
   font-size: small;
   font-weight: 600;
   width: 80%;
@@ -121,7 +115,6 @@
   border-radius: 7px;
   background-color: #fde9e9;
   padding: 4% 0 4% 7% !important;
-  /* margin-left: 1.31em; */
   margin-top: -2px;
   color: #f44848;
 }
@@ -136,12 +129,6 @@
   font-size: small;
   font-weight: 600;
 }
-/* .all-dashboard ul li img {
-  padding-right: 3%;
-}
-.role-selected-menu li img {
-  padding-right: 6.5% !important;
-} */
 .roles-header {
   grid-area: employee-header;
   display: flex;
@@ -166,7 +153,6 @@
 }
 .role-header-buttons {
   display: flex;
-  /* width: 14.9%; */
 }
 .btn-add-role img {
   margin: 0 5px 0 0;
@@ -177,14 +163,12 @@
   align-items: center;
   color: white;
   margin-right: 0;
-  /* flex-wrap: nowrap; */
   font-size: medium;
   padding: 6% 15%;
   width: 11em;
   font-weight: 600;
   background-color: #f44848;
 }
-/* drop-down-menu-filter */
 .filter-dropdowns {
   border: 1px solid #fbc9c9;
   border-radius: 5px;
@@ -197,10 +181,9 @@
 }
 .filter-dropdowns:focus {
   outline: none;
-  /* padding: 1rem 0.7rem; */
   cursor: pointer;
 }
-/* filter-drop-down-menu-ends */
+
 .filter-menu {
   display: flex;
   grid-area: filter-menu;
@@ -210,7 +193,6 @@
   align-items: flex-start;
 }
 .filter-content {
-  /* width: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -231,7 +213,6 @@
   width: 100%;
 }
 .filter-selction-menu {
-  /* background-color: red; */
   display: flex;
   padding-left: 2%;
   justify-content: space-between;
@@ -239,7 +220,6 @@
 }
 .filter-selction-menu div {
   display: flex;
-  /* border: 1px solid black; */
   margin-right: 10px;
 }
 .filter-selction-menu div p {
@@ -263,7 +243,6 @@
 .btn-apply-filter {
   background-color: #f44848;
   color: white;
-  /* border: 1px solid #f44848; */
   font-size: small;
   font-weight: 500;
   border-radius: 5px;
@@ -273,10 +252,7 @@
   grid-area: employees-details;
   padding: 0.3% 1.5%;
   border-radius: 10px;
-  /* box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1); */
 }
-
-/* roles-details-css */
 
 .roles-card {
   border: 1px solid #ebebeb;
@@ -285,9 +261,7 @@
   width: 28.2%;
   border-radius: 10px;
   margin-bottom: 1.4%;
-  /* height: 222px; */
   flex-wrap: wrap;
-  /* margin-right: 1.5%; */
 }
 .department p {
   margin: 2%;
@@ -301,15 +275,15 @@
 }
 .roles-card-header h4 {
   color: black;
-  /* margin: 2.7% 0 7% 0; */
-  /* font-weight: 700; */
 }
-.view-all-employees {
+.view-employees {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  text-align: center;
-  margin-top: 3%;
+  text-decoration: none;
+  color: #6b6b6b;
+  cursor: pointer;
+  width: 9em;
 }
 .view-all-employees p {
   font-size: small;
@@ -317,6 +291,7 @@
   margin-right: 1% !important;
   margin: 0;
 }
+
 .icon-Vector {
   font-size: smaller;
 }
@@ -363,7 +338,6 @@
 }
 .dashboard ul li:hover {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center !important;
   background-color: #fee9e9;
   padding-left: 0;

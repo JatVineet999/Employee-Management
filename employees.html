@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <aside class="sidebar">
-        <section class="dashboard">
+        <div class="dashboard">
           <span>
             <img src="images/tezo-logo.svg" alt="logo" class="logo" />
             <img src="images/handle.png" alt="handle" class="sidebar-handle" />
@@ -20,21 +20,33 @@
               <p>ALL</p>
             </div>
             <ul>
-              <li>
-                <img src="images\horizontal-nav\Dashboard.svg" alt="" />
-                <a href="#"> Dashboard</a>
-              </li>
-
-              <li class="selected-menu">
-                <div class="all-dashboard-selected-menu">
+              <li class="roles-selection-menu">
+                <a href="#">
+                  <div>
+                    <img
+                      src="images/horizontal-nav/Dashboard.svg"
+                      alt="Access-rights"
+                    />
+                    Dashboard
+                  </div>
                   <img
-                    src="images\horizontal-nav\Employees.svg"
-                    alt="employees"
-                  />
-                  <a href="#"> Employees</a>
-                </div>
-                <div class="dashboard-selection-highlight"></div>
+                    src="images/drop-right-icon.png"
+                    alt="drop-right"
+                    class="icon-none"
+                /></a>
               </li>
+              <li class="roles-selected-menu">
+                <a href="#">
+                  <div>
+                    <img
+                      src="images/horizontal-nav/Employees.svg"
+                      alt="employess"
+                    />
+                    Employees
+                  </div>
+                </a>
+              </li>
+              <span class="dashboard-selection-highlight"></span>
             </ul>
           </div>
           <div class="role-management-dashboard">
@@ -44,36 +56,39 @@
             </div>
             <ul>
               <li class="roles-selection-menu">
-                <div>
+                <a href="roles.html">
+                  <div>
+                    <img
+                      src="images/horizontal-nav/Roles.svg"
+                      alt="Access-rights"
+                    />
+                    Roles
+                  </div>
                   <img
-                    src="images/horizontal-nav/Roles.svg"
-                    alt="Access-rights"
-                  />
-                  <a href="roles.html">Roles</a>
-                </div>
-                <img
-                  src="images/drop-right-icon.png"
-                  alt="drop-right"
-                  class="roles-selection-menu-icon"
-                />
+                    src="images/drop-right-icon.png"
+                    alt="drop-right"
+                    class="roles-selection-menu-icon"
+                /></a>
               </li>
+
               <li class="roles-selection-menu">
-                <div>
+                <a href="#">
+                  <div>
+                    <img
+                      src="images\horizontal-nav\assign user.svg"
+                      alt="Access-rights"
+                    />
+                    Access Rights
+                  </div>
                   <img
-                    src="images\horizontal-nav\assign user.svg"
-                    alt="Access-rights"
-                  />
-                  <a href="#">Access Rights</a>
-                </div>
-                <img
-                  src="images/drop-right-icon.png"
-                  alt="drop-right"
-                  class="roles-selection-menu-icon"
-                />
+                    src="images/drop-right-icon.png"
+                    alt="drop-right"
+                    class="roles-selection-menu-icon"
+                /></a>
               </li>
             </ul>
           </div>
-        </section>
+        </div>
         <div class="app-update">
           <p class="app-update-install">Install new app-update 2.3.1A</p>
           <p class="app-update-description">
@@ -85,7 +100,7 @@
           </div>
         </div>
       </aside>
-      <section class="employees-navbar">
+      <header class="header-menu">
         <div class="navbar">
           <div class="search-bar">
             <img src="images/search.png" alt="search" />
@@ -119,7 +134,7 @@
             <select name="profile-switch" class="nav-drop-down"></select>
           </div>
         </div>
-      </section>
+      </header>
       <main class="main">
         <section class="employee-header">
           <div class="employee-header-text-content">

@@ -10,7 +10,7 @@
     "filter-menu"
     "employees-details";
 }
-.employees-navbar {
+.header-menu {
   grid-area: navbar;
   background-color: white;
   padding-top: 13px !important;
@@ -32,7 +32,6 @@
   padding-left: 5% !important;
   padding-top: 4.4%;
   padding-bottom: 4.4%;
-  /* font-size: 13px; */
   font-size: small;
   font-weight: 600;
 }
@@ -49,7 +48,6 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: 11px;
-  /* letter-spacing: 1px; */
 }
 .role-management-dashboard-heading-line {
   background-color: #6b7075;
@@ -57,7 +55,6 @@
   width: 1rem;
   opacity: 0.3;
   margin: 0;
-  /* margin-right: 0.5rem; */
 }
 .role-management-dashboard p {
   margin-top: 6%;
@@ -67,21 +64,15 @@
   padding-left: 6.5%;
   margin-bottom: 13px;
 }
+
 .role-management-dashboard ul li {
-  display: flex;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-left: 5.4%;
+  padding-left: 12.4%;
   padding-top: 4.4%;
   padding-bottom: 1.8%;
-  /* font-size: 13px; */
   font-size: small;
   font-weight: 600;
-  width: 78.8%;
-  padding-left: 6%;
-  padding-right: 9%;
-  border-radius: 6px;
+  width: 80%;
 }
 .role-management-dashboard ul {
   margin: 0;
@@ -94,6 +85,10 @@
 .roles-selection-menu {
   display: flex;
   flex-direction: row;
+}
+.roles-selection-highlight-container {
+  display: flex;
+  justify-content: space-between;
 }
 .roles-selection-menu-icon {
   align-self: center;
@@ -123,9 +118,6 @@
 }
 .employee-header-buttons {
   display: flex;
-  /* width: 32%; */
-  /* position: relative; */
-  /* right: -1.7%; */
 }
 .export-font {
   font-size: x-large;
@@ -155,7 +147,6 @@
   align-items: center;
   color: white;
   margin-right: 0;
-  /* flex-wrap: nowrap; */
   font-size: medium;
   padding: 0% 5.4%;
   width: 16.1em;
@@ -164,7 +155,7 @@
 }
 .alphabetical-filter li:hover {
   background-color: #fc8181;
-  color: white; /* Change the background color on hover */
+  color: white; 
 }
 .alphabetical-filter {
   grid-area: alphabetical-filter;
@@ -175,8 +166,8 @@
   align-items: center;
 }
 .alphabetical-filter li:active {
-  background-color: red; /* Change the background color for the selected item */
-  color: #ffffff; /* Adjust text color for better visibility */
+  background-color: red;
+  color: #ffffff;
 }
 .alphabetical-filter span {
   font-size: 270%;
@@ -185,7 +176,44 @@
   margin-right: 2%;
 }
 .dashboard ul li:hover {
+  display: flex;
+  align-items: center !important;
   background-color: #fee9e9;
+  padding-left: 0;
+  border-radius: 5px;
+  width: 80% !important;
+  padding-left: 1.5em !important;
+  margin: 0 0.5em 0 1em;
+}
+.roles-selected-menu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.roles-selection-menu a {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.roles-selected-menu a div {
+  margin-right: 5.2em;
+}
+.roles-selection-menu a div {
+  width: 15.2em;
+}
+.all-dashboard ul li img {
+  margin-right: 0.7em;
+}
+ul li a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.roles-selection-menu .dash img {
+  margin-right: 0.8em;
+}
+ul li a img {
+  margin-right: 5px;
 }
 .alphabetical-filter ul {
   display: flex;
@@ -211,7 +239,7 @@
   margin-left: 5px !important;
   margin-right: 5px !important;
 }
-/* drop-down-menu-filter */
+
 .filter-dropdowns {
   border: 1px solid #fbc9c9;
   border-radius: 5px;
@@ -224,10 +252,8 @@
 }
 .filter-dropdowns:focus {
   outline: none;
-  /* padding: 1rem 0.7rem; */
   cursor: pointer;
 }
-/* filter-drop-down-menu-ends */
 .filter-menu {
   display: flex;
   grid-area: filter-menu;
@@ -237,7 +263,6 @@
   align-items: flex-start;
 }
 .filter-content {
-  /* width: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -258,7 +283,6 @@
   width: 100%;
 }
 .filter-selction-menu {
-  /* background-color: red; */
   display: flex;
   padding-left: 2%;
   justify-content: space-between;
@@ -266,7 +290,6 @@
 }
 .filter-selction-menu div {
   display: flex;
-  /* border: 1px solid black; */
   margin-right: 10px;
 }
 .filter-selction-menu div p {
@@ -290,7 +313,6 @@
 .btn-apply-filter {
   background-color: #f44848;
   color: white;
-  /* border: 1px solid #f44848; */
   font-size: small;
   font-weight: 500;
   border-radius: 5px;
@@ -299,10 +321,8 @@
 .employees-details {
   grid-area: employees-details;
   padding: 0% 1.5%;
-  /* box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1); */
 }
 .employees-details-container {
-  /* padding: 1% 1.5%; */
   border-radius: 10px;
   box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
 }
@@ -334,8 +354,6 @@
   border-radius: 5px;
   padding: 0.5em 1em;
 }
-
-/* table css */
 table {
   border-collapse: collapse;
   width: 100%;
@@ -344,13 +362,9 @@ table {
 
 th,
 td {
-  /* border: 1px solid #ddd; */
   border-bottom: 1px solid #dddddd;
-  /* padding: 8px; */
-  /* padding-left: 0; */
   text-align: left;
   padding: 1% 0%;
-  /* margin: 0 3% 0 6%; */
 }
 
 th {

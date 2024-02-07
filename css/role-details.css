@@ -55,7 +55,6 @@
   justify-content: flex-start;
   align-items: center;
   margin-top: 11px;
-  /* letter-spacing: 1px; */
 }
 .role-management-dashboard-heading-line {
   background-color: #6b7075;
@@ -63,7 +62,6 @@
   width: 1rem;
   opacity: 0.3;
   margin: 0;
-  /* margin-right: 0.5rem; */
 }
 .role-management-dashboard p {
   margin-top: 6%;
@@ -74,13 +72,10 @@
   margin-bottom: 13px;
 }
 .role-management-dashboard ul li {
-  /* display: flex; */
-  /* justify-content: flex-start; */
   align-items: center;
   padding-left: 12.4%;
   padding-top: 4.4%;
   padding-bottom: 1.8%;
-  /* font-size: 13px; */
   font-size: small;
   font-weight: 600;
   width: 80%;
@@ -109,7 +104,6 @@
 
 .role-details-navbar {
   grid-area: navbar;
-  /* border: 1px solid black; */
   padding: 0 1.5%;
   padding-top: 13px !important;
 }
@@ -185,14 +179,11 @@
   align-items: center;
   color: white;
   margin-right: 0;
-  /* flex-wrap: nowrap; */
   font-size: medium;
   padding: 1em 2em;
-  /* width: 64em; */
   font-weight: 600;
   background-color: #f44848;
 }
-/* drop-down-menu-filter */
 .roles-details {
   grid-area: employees-details;
   padding: 0.3% 1.5%;
@@ -200,10 +191,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   border-radius: 10px;
-  /* box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1); */
 }
-
-/* roles-details-css */
 
 .roles-card {
   border: 1px solid #ebebeb;
@@ -212,9 +200,7 @@
   width: 28%;
   border-radius: 10px;
   margin-bottom: 1.4%;
-  /* height: 222px; */
   flex-wrap: wrap;
-  /* margin-right: 1.5%; */
 }
 .department p {
   margin: 2%;
@@ -241,8 +227,6 @@
 .roles-card-header h5 {
   color: black;
   margin: 0 0 1% 0;
-  /* margin: 2.7% 0 7% 0; */
-  /* font-weight: 700; */
 }
 .view-all-employees {
   display: flex;
@@ -299,7 +283,6 @@ img {
 
 .dashboard ul li:hover {
   display: flex;
-  /* justify-content: space-between; */
   align-items: center !important;
   background-color: #fee9e9;
   padding-left: 0;
