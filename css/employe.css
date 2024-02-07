@@ -1,27 +1,40 @@
-@import url("common.css");
-
+@import url("comm.css");
+.container {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 16.375em 1fr;
+  /* grid-template-rows: 5.813em 5.188em 4em 4.188em 1fr; */
+  grid-template-areas: "sidebar main";
+  /* "sidebar main"
+    "sidebar main"
+    "sidebar main"
+    "sidebar main"; */
+  /* height: 100vh; */
+}
 .main {
   grid-area: main;
-  grid-template-rows: minmax(5.188em, auto) minmax(4em, auto) 4.188em 1fr;
+  grid-template-rows: 5.813em minmax(5.188em, auto) minmax(4em, auto) 4.188em 1fr;
   display: grid;
   grid-template-areas:
+    "employees-dashboard"
     "employee-header"
     "alphabetical-filter"
     "filter-menu"
     "employees-details";
 }
-.employees-navbar {
-  grid-area: navbar;
-  background-color: white;
-  padding-top: 13px !important;
-  padding: 0 1.5%;
+
+.sidebar-handle {
+  position: absolute;
+  right: -0.9em;
+  top: 2em;
 }
+
 .all-dashboard-selected-menu {
   width: 81.5%;
   border-radius: 7px;
   background-color: #fde9e9;
   padding: 4% 0 4% 7% !important;
-  margin-left: -1em;
+  /* margin-left: 1.31em; */
   margin-top: -2px;
   color: #f44848;
 }
@@ -69,19 +82,15 @@
 }
 .role-management-dashboard ul li {
   display: flex;
-  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 5.4%;
+  padding-left: 12.4%;
   padding-top: 4.4%;
   padding-bottom: 1.8%;
   /* font-size: 13px; */
   font-size: small;
   font-weight: 600;
-  width: 78.8%;
-  padding-left: 6%;
-  padding-right: 9%;
-  border-radius: 6px;
+  width: 70.8%;
 }
 .role-management-dashboard ul {
   margin: 0;
@@ -102,6 +111,8 @@
 }
 .employee-header {
   grid-area: employee-header;
+}
+.employee-header-container {
   display: flex;
   padding: 0 1.5%;
   flex-wrap: wrap;
@@ -110,7 +121,6 @@
   margin-top: -2px;
   justify-content: space-between;
 }
-
 .employee-header-text-content h4 {
   color: #586a7b;
   font-size: medium;
@@ -373,7 +383,7 @@ td .user-profile {
   justify-content: flex-start;
   align-items: center;
 }
-th figure {
+th span {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -392,6 +402,5 @@ td .user-profile p {
 input[type="checkbox"] {
   margin-right: 5px;
   margin-left: 20%;
-  scale: 1.3;
   width: 30px;
 }

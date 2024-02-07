@@ -1,13 +1,5 @@
 @import url("common.css");
-.container {
-  margin: 0;
-  display: grid;
-  grid-template-columns: 16.375em 1fr;
-  grid-template-rows: 5.813em;
-  grid-template-areas:
-    "sidebar navbar"
-    "sidebar main";
-}
+
 .main {
   grid-area: main;
   display: grid;
@@ -16,11 +8,6 @@
     "employee-header"
     "role-description"
     "employees-details";
-}
-.sidebar-handle {
-  position: absolute;
-  right: -0.9em;
-  top: 2em;
 }
 
 .roles-selection-highlight {
@@ -124,11 +111,10 @@
   grid-area: navbar;
   /* border: 1px solid black; */
   padding: 0 1.5%;
+  padding-top: 13px !important;
 }
 .role-details-header {
   grid-area: employee-header;
-}
-.role-details-header-container {
   display: flex;
   padding: 0 2%;
   padding-left: 2%;
@@ -136,6 +122,7 @@
   margin-top: -2px;
   justify-content: space-between;
 }
+
 .role-details-header-text-content div {
   display: flex;
   justify-content: flex-start;
@@ -164,8 +151,6 @@
 }
 .role-description-header {
   grid-area: role-description;
-}
-.role-description-container {
   display: flex;
   padding: 0 2%;
   padding-left: 2%;
@@ -173,6 +158,7 @@
   margin-top: -2px;
   justify-content: space-between;
 }
+
 .role-description-text-content h4 {
   color: #586a7b;
   font-size: medium;
@@ -210,12 +196,11 @@
 .roles-details {
   grid-area: employees-details;
   padding: 0.3% 1.5%;
-  /* box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1); */
-}
-.roles-details-container {
-  /* padding:0 .5%; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border-radius: 10px;
-  /* box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1); */
 }
 
 /* roles-details-css */
@@ -311,8 +296,18 @@ img {
   font-size: smaller;
   margin-left: 1%;
 }
-.roles-details-container {
+
+.dashboard ul li:hover {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-items: center !important;
+  background-color: #fee9e9;
+  padding-left: 0;
+  border-radius: 5px;
+  width: 80% !important;
+  padding-left: 1.5em !important;
+  margin: 0 0.5em 0 1em;
+}
+.roles-selected-menu a {
+  color: #f76f6f;
 }

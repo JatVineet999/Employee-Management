@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/Employees.css" />
+    <link rel="stylesheet" href="css/employees.css" />
     <title>Employees-dashboard</title>
   </head>
   <body>
     <div class="container">
       <aside class="sidebar">
         <section class="dashboard">
-          <figure>
+          <span>
             <img src="images/tezo-logo.svg" alt="logo" class="logo" />
             <img src="images/handle.png" alt="handle" class="sidebar-handle" />
-          </figure>
+          </span>
           <div class="all-dashboard">
             <div class="all-dashboard-heading">
               <hr class="all-dashboard-heading-line" />
@@ -74,73 +74,68 @@
             </ul>
           </div>
         </section>
-        <div class="update">
-          <p class="update-install">Install new update 2.3.1A</p>
-          <p class="update-description">
-            Allow to launch the new update for the AD application
+        <div class="app-update">
+          <p class="app-update-install">Install new app-update 2.3.1A</p>
+          <p class="app-update-description">
+            Allow to launch the new app-update for the AD application
           </p>
           <div>
-            <button class="btn btn-dismiss"><a href="#">Dismiss</a></button
-            ><button class="btn btn-accept"><a href="#">Accept</a></button>
+            <button class="btn btn-dismiss">Dismiss</button
+            ><button class="btn btn-accept">Accept</button>
           </div>
         </div>
       </aside>
-      <main class="main">
-        <section class="employees-navbar">
-          <div class="navbar-container">
-            <div class="navbar">
-              <div class="search-bar">
-                <img src="images/search.png" alt="search" />
-                <input type="search" placeholder="Search" />
-              </div>
-              <figure>
-                <a href="#"><span class="icon-language"></span></a>
-              </figure>
-              <figure>
-                <a href="#"> <span class="icon-categories"></span></a>
-              </figure>
-              <figure>
-                <a href="#"> <span class="icon-mode"></span></a>
-              </figure>
-              <figure>
-                <a href="#">
-                  <span class="icon-notifications"
-                    ><span class="notification-icon-part-1"></span
-                    ><span class="notification-icon-part-2"></span
-                    ><span class="notification-icon-part-3"></span></span
-                ></a>
-              </figure>
-              <figure>
-                <img src="images/profile-pic.png" alt="profille" />
-              </figure>
-              <div class="profile">
-                <p class="profile-name">John Abraham</p>
-                <p class="profile-role">Admin</p>
-              </div>
-              <div class="nav-dropdown">
-                <select name="profile-switch" class="nav-drop-down"></select>
-              </div>
-            </div>
+      <section class="employees-navbar">
+        <div class="navbar">
+          <div class="search-bar">
+            <img src="images/search.png" alt="search" />
+            <input type="search" placeholder="Search" />
           </div>
-        </section>
+          <span>
+            <a href="#"><span class="icon-language"></span></a>
+          </span>
+          <span>
+            <a href="#"> <span class="icon-categories"></span></a>
+          </span>
+          <span>
+            <a href="#"> <span class="icon-mode"></span></a>
+          </span>
+          <span>
+            <a href="#">
+              <span class="icon-notifications"
+                ><span class="notification-icon-part-1"></span
+                ><span class="notification-icon-part-2"></span
+                ><span class="notification-icon-part-3"></span></span
+            ></a>
+          </span>
+          <span>
+            <img src="images/profile-pic.png" alt="profille" />
+          </span>
+          <div class="profile">
+            <p class="profile-name">John Abraham</p>
+            <p class="profile-role">Admin</p>
+          </div>
+          <div class="nav-dropdown">
+            <select name="profile-switch" class="nav-drop-down"></select>
+          </div>
+        </div>
+      </section>
+      <main class="main">
         <section class="employee-header">
-          <div class="employee-header-container">
-            <div class="employee-header-text-content">
-              <h4>Employees</h4>
-              <p>
-                Find all of your company's employee accounts and their
-                associated roles.
-              </p>
-            </div>
-            <div class="employee-header-buttons">
-              <button class="btn btn-export">
-                <span class="export-font icon-Export"></span>EXPORT
-              </button>
-              <button class="btn btn-add-employee">
-                <img src="images\Interface\Add.svg" alt="add-icon" />ADD
-                EMPLOYEEE
-              </button>
-            </div>
+          <div class="employee-header-text-content">
+            <h4>Employees</h4>
+            <p>
+              Find all of your company's employee accounts and their associated
+              roles.
+            </p>
+          </div>
+          <div class="employee-header-buttons">
+            <button class="btn btn-export">
+              <span class="export-font icon-Export"></span>EXPORT
+            </button>
+            <button class="btn btn-add-employee">
+              <img src="images\Interface\Add.svg" alt="add-icon" />ADD EMPLOYEEE
+            </button>
           </div>
         </section>
         <section class="alphabetical-filter">
@@ -224,7 +219,7 @@
                 <thead>
                   <tr>
                     <th>
-                      <div><input type="checkbox" /></div>
+                      <input type="checkbox" />
                     </th>
                     <th>
                       <div>

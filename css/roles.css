@@ -1,13 +1,5 @@
 @import url("common.css");
-.container {
-  margin: 0;
-  display: grid;
-  grid-template-columns: 16.375em 1fr;
-  grid-template-rows: 5.813em;
-  grid-template-areas:
-    "sidebar navbar"
-    "sidebar main";
-}
+
 .main {
   grid-area: main;
   display: grid;
@@ -18,15 +10,11 @@
     "employees-details";
 }
 
-.sidebar-handle {
-  position: absolute;
-  right: -0.9em;
-  top: 2em;
-}
 .roles-navbar {
   grid-area: navbar;
   /* border: 1px solid black; */
   padding: 0 1.5%;
+  padding-top: 13px !important;
 }
 .roles-selection-highlight {
   display: flex;
@@ -156,8 +144,6 @@
 } */
 .roles-header {
   grid-area: employee-header;
-}
-.roles-header-container {
   display: flex;
   flex-wrap: wrap;
   padding: 0 2%;
@@ -166,6 +152,7 @@
   margin-top: -2px;
   justify-content: space-between;
 }
+
 .roles-header-text-content h4 {
   color: #586a7b;
   font-size: medium;
@@ -285,12 +272,8 @@
 .roles-details {
   grid-area: employees-details;
   padding: 0.3% 1.5%;
-  /* box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1); */
-}
-.roles-details-container {
-  /* padding:0 .5%; */
   border-radius: 10px;
-  /* box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.1); */
 }
 
 /* roles-details-css */
@@ -377,4 +360,19 @@
   text-decoration: none;
   color: #6b6b6b;
   cursor: pointer;
+}
+.dashboard ul li:hover {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center !important;
+  background-color: #fee9e9;
+  padding-left: 0;
+  border-radius: 5px;
+  width: 80% !important;
+  padding-left: 1.5em !important;
+  margin: 0 0.5em 0 1em;
+}
+
+.roles-selected-menu a {
+  color: #f76f6f;
 }

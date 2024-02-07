@@ -1,13 +1,4 @@
 @import url("font.css");
-.container {
-  margin: 0;
-  display: grid;
-  grid-template-columns: 16.375em 1fr;
-  grid-template-rows: 5.813em;
-  grid-template-areas:
-    "sidebar navbar"
-    "sidebar main";
-}
 body {
   margin: 0;
   font-family: "Nunito", sans-serif;
@@ -16,12 +7,14 @@ span {
   margin: 0;
   padding: 0;
 }
-.sidebar-handle {
-  position: absolute;
-  right: -0.9em;
-  top: 2em;
+.employees-navbar {
+  grid-area: employees-dashboard;
+  /* width: calc(100% -16.375em); */
+  /* border: 1px solid black; */
+  /* position: fixed; */
+  width: 79%;
+  padding: 0 1.5%;
 }
-
 .sidebar a {
   text-decoration: none;
   color: #6b7075;
@@ -35,8 +28,8 @@ span {
   box-shadow: 0px 0px 20px 1px rgba(201, 194, 194, 0.1);
   justify-content: space-between;
   color: #6b7075;
-  /* position: relative; */
-  position: fixed;
+  position: relative;
+  /* position: fixed; */
   height: 100vh;
 }
 .container ul {
@@ -85,12 +78,9 @@ span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 5.4%;
+  padding-left: 12.4%;
   padding-top: 4.4%;
   padding-bottom: 4.4%;
-  padding-left: 6%;
-  padding-right: 0%;
-  border-radius: 6px;
   /* font-size: 13px; */
   font-size: small;
   font-weight: 600;
@@ -163,18 +153,19 @@ span {
   text-decoration: none;
   color: white;
 }
-
+.navbar-container {
+  padding-top: 13px;
+  background-color: white;
+  /* position: fixed;
+  width: 79%; */
+}
 .navbar {
   display: flex;
   flex-direction: row;
-  background-color: white;
   border-radius: 10px;
   justify-content: space-between;
   align-items: center;
-  width: -webkit-fill-available;
   font-size: 250%;
-  position: fixed;
-  margin-right: 1.3%;
   box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
 }
 .search-bar {
