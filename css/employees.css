@@ -1,0 +1,233 @@
+@import url("common.css");
+
+.main {
+  grid-area: main;
+  grid-template-rows: minmax(5.188em, auto) minmax(4em, auto) 4.188em 1fr;
+  display: grid;
+  grid-template-areas:
+    "employee-header"
+    "alphabetical-filter"
+    "filter-menu"
+    "employees-details";
+}
+.header-menu {
+  grid-area: user-options-section;
+  background-color: white;
+  padding-top: 13px !important;
+  padding: 0 1.5%;
+}
+.selected-menu {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: center;
+  padding-left: 5% !important;
+  padding-top: 4.4%;
+  padding-bottom: 4.4%;
+  font-size: small;
+  font-weight: 600;
+}
+.employee-header {
+  grid-area: employee-header;
+  display: flex;
+  padding: 0 1.5%;
+  flex-wrap: wrap;
+  padding-left: 2%;
+  align-items: center;
+  margin-top: -2px;
+  justify-content: space-between;
+}
+
+.employee-header-text-content h4 {
+  color: #586a7b;
+  font-size: medium;
+  margin-bottom: 3%;
+}
+.employee-header-text-content p {
+  color: #85929d;
+  font-size: medium;
+  margin-top: 0;
+}
+.employee-header-buttons {
+  display: flex;
+}
+.export-font {
+  font-size: x-large;
+  margin-right: 5px;
+}
+.btn-export {
+  font-size: small;
+  display: flex;
+  height: 3em;
+  margin-right: 3%;
+  justify-content: center;
+  font-weight: 500;
+  text-align: center;
+  align-items: center;
+  color: #85929d;
+  padding: 0% 7.3%;
+  padding-left: 4%;
+  background-color: white;
+  border: 1px solid #85929d;
+}
+.btn-add-employee img {
+  margin-right: 6px;
+}
+.btn-add-employee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-right: 0;
+  font-size: medium;
+  padding: 0% 5.4%;
+  width: 16.1em;
+  font-weight: 600;
+  background-color: red;
+}
+.alphabetical-filter li:hover {
+  background-color: #fc8181;
+  color: white;
+}
+.alphabetical-filter {
+  grid-area: alphabetical-filter;
+  padding: 0 1.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.alphabetical-filter li:active {
+  background-color: red;
+  color: #ffffff;
+}
+.alphabetical-filter span {
+  font-size: 270%;
+  width: 2%;
+  cursor: pointer;
+  margin-right: 2%;
+}
+.dashboard ul li:hover {
+  display: flex;
+  align-items: center !important;
+  background-color: #fee9e9;
+  padding-left: 0;
+  border-radius: 5px;
+  width: 80% !important;
+  padding-left: 1.5em !important;
+  margin: 0 0.5em 0 1em;
+}
+.alphabetical-filter ul {
+  display: flex;
+  padding-left: 0;
+  flex-wrap: wrap;
+  width: 97%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.alphabetical-filter ul li {
+  cursor: pointer;
+  background-color: #eaebee;
+  margin: 0.2%;
+  padding: 1% 1%;
+  font-size: small;
+  border-radius: 5px;
+  color: #9ca5b4;
+}
+.highlited-alphabet {
+  color: white !important;
+  background-color: #f44848 !important;
+  margin-left: 5px !important;
+  margin-right: 5px !important;
+}
+.employees-details {
+  grid-area: employees-details;
+  padding: 0% 1.5%;
+}
+.employees-details-container {
+  border-radius: 10px;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.1);
+}
+.employees-details-container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 1.5%;
+}
+.employees-details-container-header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icon-arrow-turn-left--down {
+  font-size: 130%;
+}
+.icon-table-add {
+  font-size: 130%;
+}
+.employees-details-container-header span {
+  padding-right: 1%;
+}
+.btn-delete {
+  background-color: #f89191;
+  color: white;
+  font-size: small;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: small;
+}
+
+th,
+td {
+  border-bottom: 1px solid #dddddd;
+  text-align: left;
+  padding: 1% 0%;
+}
+
+th {
+  background-color: #fafafc;
+  font-size: small;
+  text-align: start;
+
+  border-top: 1px solid #dddddd;
+  color: #4b5b78;
+  align-items: center;
+}
+th div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+td .user-profile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+th figure {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+td .user-profile h5 {
+  margin: 0%;
+  font-size: small;
+}
+td .user-profile p {
+  color: #5c6a85;
+  font-size: smaller;
+  margin: 0%;
+}
+
+input[type="checkbox"] {
+  margin-right: 5px;
+  margin-left: 20%;
+  scale: 1.3;
+  width: 30px;
+}
