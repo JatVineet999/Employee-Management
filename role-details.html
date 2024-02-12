@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/role-details.css" />
     <title>Role-details-dashboard</title>
+    <script src="/javaScript/role-details.js" defer></script>
   </head>
   <body>
     <div class="container">
       <aside class="sidebar">
         <div class="dashboard">
-          <span>
+          <div class="logo-container">
             <img src="images/tezo-logo.svg" alt="logo" class="logo" />
-            <img src="images/handle.png" alt="handle" class="sidebar-handle" />
-          </span>
+          </div>
           <div class="all-dashboard">
             <div class="all-dashboard-heading">
               <hr class="all-dashboard-heading-line" />
@@ -25,23 +25,21 @@
                   <div>
                     <img
                       src="images/horizontal-nav/Dashboard.svg"
-                      alt="roles"
+                      alt="Access-rights"
                     />
-                    Dashboard
+                    <span>Dashboard</span>
                   </div>
                   <img
-                    src="images/drop-down-right.png"
+                    src="images/drop-right.svg"
                     alt="drop-right"
-                    class="icon-none"
-                  />
-                </a>
+                    class="roles-selection-menu-icon icon-none"
+                /></a>
               </li>
-
               <li class="roles-selection-menu">
                 <a href="employees.html">
                   <div>
                     <img src="images/employee-team.svg" alt="roles" />
-                    Employees
+                    <span>Employees</span>
                   </div>
                   <img
                     src="images/drop-down-right.png"
@@ -62,16 +60,17 @@
                 <a href="#">
                   <div>
                     <img src="images/setting.png" alt="roles" />
-                    Roles
+                      <span>Roles</span>
                   </div>
                   <img
-                    src="images/drop-down-right.png"
+                    src="images/drop-right-selected.svg"
                     alt="drop-right"
                     class="roles-selection-menu-icon"
                   />
                 </a>
+                <span class="dashboard-selection-highlight"></span>
               </li>
-              <span class="dashboard-selection-highlight"></span>
+
               <li class="roles-selection-menu">
                 <a href="#">
                   <div>
@@ -79,10 +78,10 @@
                       src="images\horizontal-nav\assign user.svg"
                       alt="Access-rights"
                     />
-                    Access Rights
+                    <span>Access Rights</span>
                   </div>
                   <img
-                    src="images/drop-right-icon.png"
+                    src="images/drop-right.svg"
                     alt="drop-right"
                     class="roles-selection-menu-icon"
                 /></a>
@@ -102,6 +101,9 @@
         </div>
       </aside>
       <section class="role-details-user-options-section">
+        <div class="sidebar-handle-icon">
+          <img src="images/handle.png" alt="handle" class="sidebar-handle" />
+        </div>
         <div class="user-options-section">
           <div class="search-bar">
             <img src="images/search.png" alt="search" />
@@ -119,9 +121,9 @@
           <span>
             <a href="#">
               <span class="icon-notifications"
-                ><span class="notification-icon-part-1"></span
-                ><span class="notification-icon-part-2"></span
-                ><span class="notification-icon-part-3"></span></span
+                ><span class="notification-icon-part-a"></span
+                ><span class="notification-icon-part-b"></span
+                ><span class="notification-icon-part-c"></span></span
             ></a>
           </span>
           <span><img src="images/profile-pic.png" alt="" /></span>
@@ -183,7 +185,7 @@
             </div>
             <div class="department">
               <div>
-                <span class="icon-email-1_svgrepocom2"></span>
+                <span class="icon-email-svgrepocom"></span>
                 <p>adamk@yahoo.com</p>
               </div>
             </div>
@@ -220,7 +222,7 @@
             </div>
             <div class="department">
               <div>
-                <span class="icon-email-1_svgrepocom2"></span>
+                <span class="icon-email-svgrepocom"></span>
                 <p>adamk@yahoo.com</p>
               </div>
             </div>
@@ -257,7 +259,7 @@
             </div>
             <div class="department">
               <div>
-                <span class="icon-email-1_svgrepocom2"></span>
+                <span class="icon-email-svgrepocom"></span>
                 <p>adamk@yahoo.com</p>
               </div>
             </div>
@@ -294,7 +296,7 @@
             </div>
             <div class="department">
               <div>
-                <span class="icon-email-1_svgrepocom2"></span>
+                <span class="icon-email-svgrepocom"></span>
                 <p>adamk@yahoo.com</p>
               </div>
             </div>
@@ -331,7 +333,7 @@
             </div>
             <div class="department">
               <div>
-                <span class="icon-email-1_svgrepocom2"></span>
+                <span class="icon-email-svgrepocom"></span>
                 <p>adamk@yahoo.com</p>
               </div>
             </div>
@@ -368,7 +370,7 @@
             </div>
             <div class="department">
               <div>
-                <span class="icon-email-1_svgrepocom2"></span>
+                <span class="icon-email-svgrepocom"></span>
                 <p>adamk@yahoo.com</p>
               </div>
             </div>

@@ -2,7 +2,7 @@
 .container {
   margin: 0;
   display: grid;
-  grid-template-columns: 16.375em 1fr;
+  grid-template-columns: 18% 82%;
   grid-template-rows: 5.813em;
   grid-template-areas:
     "sidebar user-options-section"
@@ -10,26 +10,31 @@
 }
 body {
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
+  font-family: "Noto Sans", Poppins, sans-serif;
 }
 span {
   margin: 0;
   padding: 0;
 }
-.sidebar-handle {
+
+/* .sidebar-handle {
   position: absolute;
   right: -0.9em;
   top: 2em;
-}
+} */
 
+.sidebar-handle-icon {
+  position: absolute;
+  left: -1rem;
+  align-items: center;
+}
 .sidebar a {
   text-decoration: none;
   color: #6b7075;
 }
 .sidebar {
   grid-area: sidebar;
-  width: 16.375rem;
+  width: 18.5%;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 0px 20px 1px rgba(201, 194, 194, 0.1);
@@ -41,124 +46,114 @@ span {
 .container ul {
   list-style-type: none;
 }
-.logo {
-  padding-left: 1em;
-  padding-top: 0.938em;
-  font-size: 2em;
-  margin: 0;
-}
-.all-dashboard {
-  margin-top: 1.5em;
+.logo-container {
+  margin-left: 12%;
+  margin-top: 10%;
+  width: 10%;
 }
 .all-dashboard-heading {
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 5px;
+  margin: 10% 0 5% 0;
 }
 .all-dashboard-heading-line {
   background-color: #6b7075;
   height: 1px;
-  width: 1rem;
+  width: 1em;
   opacity: 0.3;
-  margin: 0;
+  margin: 0 6.5% 0 0;
 }
 
 .all-dashboard p {
   font-size: 0.75em;
   vertical-align: middle;
   opacity: 0.5;
-  padding-left: 6.5%;
 }
 
 .all-dashboard ul {
-  margin: 0;
+  margin-left: 0%;
+  padding: 0;
+  margin-top: 0%;
+}
+.role-management-dashboard ul {
+  margin-left: 0%;
+  margin-top: 0%;
   padding: 0;
 }
-
+.role-management-dashboard ul li {
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+}
 .all-dashboard ul li {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 5.4%;
-  padding-top: 4.4%;
-  padding-bottom: 4.4%;
-  padding-left: 6%;
-  padding-right: 0%;
-  border-radius: 6px;
-  font-size: small;
-  font-weight: 600;
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
 }
-.highlight {
-  position: absolute;
-  right: 0;
-  top: 2.5em;
-  margin: 0;
-  padding: 0;
-  width: 4px !important;
-}
-.role-management-dashboard {
-  position: relative;
+.dashboard ul li a:hover {
+  background-color: #fee9e9;
+  border-radius: 5px;
 }
 
 .dashboard-selection-highlight {
-  float: inline-end;
-  position: relative;
-  top: -2.8em;
   background-color: #f44848;
-  width: 4px !important;
+  width: 4px;
   margin: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  height: 2.8em;
+  height: 2.6em;
 }
-
-.all-dashboard-selected-menu li {
-  width: 81.5%;
-  border-radius: 7px;
-  background-color: #fde9e9;
-  padding: 4% 0 4% 5.6% !important;
-  margin-left: 1.31em;
-  margin-top: -2px;
-  color: #f44848;
-}
-.all-dashboard ul li img {
-  padding-right: 6%;
-}
-.all-dashboard-selected-menu {
+.roles-selected-menu {
   display: flex;
+  margin-left: 9%;
+  align-items: flex-start;
+  justify-content: space-between;
 }
-.all-dashboard-selected-menu a {
-  color: #f76f6f;
+.roles-selection-menu {
+  margin-left: 9%;
 }
 .roles-selected-menu a {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  width: 85%;
+  background-color: #fee9e9;
+  padding: 0.7em 0.1em 0.7em 0.5em;
+  border-radius: 5px;
+}
+.roles-selection-menu-icon {
+  width: 0.5em;
 }
 .roles-selection-menu a {
   display: flex;
+  padding: 0.6em 0.7em;
+  width: 80%;
   justify-content: space-between;
-  align-items: flex-start;
-}
-.roles-selected-menu a div {
-  margin-right: 5.2em;
-}
-.roles-selection-menu a div {
-  width: 15.2em;
-}
-.all-dashboard ul li img {
-  margin-right: 0.7em;
-}
-ul li a {
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
 }
-ul li a img {
-  margin-right: 5px;
+.roles-selected-menu a div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: small;
+  font-weight: 600;
 }
+.roles-selection-menu a div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: small;
+  font-weight: 600;
+}
+.roles-selection-menu img {
+  margin: 0% 3% 0% 0%;
+
+  margin-bottom: 2px;
+}
+.roles-selected-menu img {
+  margin: 0% 7% 0% 0%;
+}
+
 .role-management-dashboard-heading {
   display: flex;
   flex-direction: row;
@@ -173,6 +168,7 @@ ul li a img {
   opacity: 0.3;
   margin: 0;
 }
+
 .role-management-dashboard p {
   margin-top: 6%;
   font-size: 0.75em;
@@ -181,22 +177,7 @@ ul li a img {
   padding-left: 6.5%;
   margin-bottom: 13px;
 }
-.role-management-dashboard ul li {
-  align-items: center;
-  padding-left: 12.4%;
-  padding-top: 4.4%;
-  padding-bottom: 1.8%;
-  font-size: small;
-  font-weight: 600;
-  width: 80%;
-}
-.role-management-dashboard ul {
-  margin: 0;
-  padding: 0;
-}
-.role-management-dashboard ul li img {
-  padding-right: 4%;
-}
+
 .app-update {
   background-color: #fef6f6;
   padding: 3% 3% 3% 6%;
@@ -295,43 +276,6 @@ ul li a img {
   cursor: pointer;
 }
 
-.roles-selection-menu {
-  display: flex;
-  justify-content: space-between;
-}
-.roles-selected-menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center !important;
-  background-color: #fee9e9;
-  padding-left: 0;
-  border-radius: 5px;
-  width: 80% !important;
-  padding-left: 1.5em !important;
-  margin: 0 0.5em 0 1em;
-}
-.roles-selection-menu div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 12em;
-}
-.roles-selected-menu img {
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 2px;
-}
-.roles-selection-menu img {
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 2px;
-}
-.roles-selected-menu div {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 10em;
-}
 .icon-none {
   display: none;
 }

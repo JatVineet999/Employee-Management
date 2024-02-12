@@ -9,23 +9,18 @@
     "alphabetical-filter"
     "filter-menu"
     "employees-details";
+    padding-left: .5%;
 }
 .header-menu {
   grid-area: user-options-section;
   background-color: white;
-  padding-top: 13px !important;
-  padding: 0 1.5%;
-}
-.selected-menu {
+  position: relative;
   display: flex;
-  justify-content: space-between !important;
-  align-items: center;
-  padding-left: 5% !important;
-  padding-top: 4.4%;
-  padding-bottom: 4.4%;
-  font-size: small;
-  font-weight: 600;
+  padding-left: 2.1%;
+  flex-direction: column;
+  justify-content: center;
 }
+
 .employee-header {
   grid-area: employee-header;
   display: flex;
@@ -36,7 +31,6 @@
   margin-top: -2px;
   justify-content: space-between;
 }
-
 .employee-header-text-content h4 {
   color: #586a7b;
   font-size: medium;
@@ -106,16 +100,7 @@
   cursor: pointer;
   margin-right: 2%;
 }
-.dashboard ul li:hover {
-  display: flex;
-  align-items: center !important;
-  background-color: #fee9e9;
-  padding-left: 0;
-  border-radius: 5px;
-  width: 80% !important;
-  padding-left: 1.5em !important;
-  margin: 0 0.5em 0 1em;
-}
+
 .alphabetical-filter ul {
   display: flex;
   padding-left: 0;
@@ -142,6 +127,8 @@
 }
 .employees-details {
   grid-area: employees-details;
+  height: 57vh;
+  overflow-y: auto;
   padding: 0% 1.5%;
 }
 .employees-details-container {

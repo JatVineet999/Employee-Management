@@ -12,8 +12,12 @@
 
 .role-details-user-options-section {
   grid-area: user-options-section;
-  padding: 0 1.5%;
-  padding-top: 13px !important;
+  padding: 0 2.1%;
+  padding-top: 13px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .role-details-header {
   grid-area: employee-header;
@@ -161,18 +165,4 @@ img {
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-}
-
-.dashboard ul li:hover {
-  display: flex;
-  align-items: center !important;
-  background-color: #fee9e9;
-  padding-left: 0;
-  border-radius: 5px;
-  width: 80% !important;
-  padding-left: 1.5em !important;
-  margin: 0 0.5em 0 1em;
-}
-.roles-selected-menu a {
-  color: #f76f6f;
 }

@@ -11,20 +11,14 @@
 
 .roles-user-options-section {
   grid-area: user-options-section;
-  padding: 0 1.5%;
-  padding-top: 13px !important;
+  background-color: white;
+  position: relative;
+  display: flex;
+  padding-left: 2.1%;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.selected-menu {
-  display: flex !important;
-  justify-content: space-between !important;
-  align-items: center;
-  padding-left: 5% !important;
-  padding-top: 4.4%;
-  padding-bottom: 4.4%;
-  font-size: small;
-  font-weight: 600;
-}
 .roles-header {
   grid-area: employee-header;
   display: flex;
@@ -94,7 +88,6 @@
   color: black;
 }
 .view-employees {
-  width: 20em;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -139,19 +132,4 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.dashboard ul li:hover {
-  display: flex;
-  align-items: center !important;
-  background-color: #fee9e9;
-  padding-left: 0;
-  border-radius: 5px;
-  width: 80% !important;
-  padding-left: 1.5em !important;
-  margin: 0 0.5em 0 1em;
-}
-
-.roles-selected-menu a {
-  color: #f76f6f;
 }

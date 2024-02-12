@@ -35,7 +35,9 @@
   content: "\e926";
   color: #5f5f5f;
 }
-
+.icon-drop-right:before {
+  content: "\e900";
+}
 .icon-arrow-turn-left--down:before {
   content: "\e90c";
   color: #455573;
@@ -64,17 +66,17 @@
   content: "\e914";
   color: #32475c;
 }
-.icon-notifications .notification-icon-part-1:before {
+.icon-notifications .notification-icon-part-a:before {
   content: "\e915";
   color: rgb(50, 71, 92);
   opacity: 0.87;
 }
-.icon-notifications .notification-icon-part-2:before {
+.icon-notifications .notification-icon-part-b:before {
   content: "\e916";
   margin-left: -1.2001953125em;
   color: rgb(255, 255, 255);
 }
-.icon-notifications .notification-icon-part-3:before {
+.icon-notifications .notification-icon-part-c:before {
   content: "\e917";
   margin-left: -1.2001953125em;
   color: rgb(255, 62, 29);
@@ -91,34 +93,18 @@
 .icon-team_svgrepocom:before {
   content: "\e929";
 }
-.icon-Vector-12:before {
+/* .icon-Vector-12:before {
   content: "\e92a";
-}
-.icon-email-1_svgrepocom2:before {
+} */
+.icon-email-svgrepocom:before {
   content: "\e92b";
   color: #080341;
 }
 
-.icon-team_svgrepocom1:before {
-  content: "\e91b";
-}
-
-.icon-email-1_svgrepocom:before {
-  content: "\e91d";
-  color: #080341;
-}
-
-.icon-team_svgrepocom11:before {
-  content: "\e901";
-}
 .icon-Vector:before {
   content: "\e908";
   color: #4c4c4c;
 }
 .icon-edit:before {
   content: "\e909";
-}
-.icon-email-1_svgrepocom1:before {
-  content: "\e90a";
-  color: #080341;
 }
